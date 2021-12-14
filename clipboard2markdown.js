@@ -127,7 +127,7 @@
   };
 
   var convert = function (str) {
-    return escape(toMarkdown(str, { converters: pandoc, gfm: true }));
+    return escape(toMarkdown(str, { converters: pandoc, gfm: true, headingStyle: 'atx' }));
   }
 
   var insert = function (myField, myValue) {
